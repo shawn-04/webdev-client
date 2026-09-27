@@ -6,7 +6,7 @@ export default function TOC() {
       <p id="wd-toc-personal">
         Shawn Godfrey
         <br />
-        One commit at a time.
+        I can do all things through Christ who strengthens me
       </p>
       <ul>
         <li>
