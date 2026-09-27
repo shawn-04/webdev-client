@@ -14,12 +14,41 @@ export default function ListTags() {
         <li>Flip and cook the other side.</li>
         <li>Serve and enjoy!</li>
       </ol>
-      My favorite recipe:
-      <ol id="wd-your-favorite-recipe">
-        <li>Cook rice and let it cool.</li>
-        <li>Scramble two eggs in a hot pan with oil.</li>
-        <li>Add the rice, soy sauce, and chopped green onions.</li>
-        <li>Stir fry for five minutes and serve.</li>
+     My favorite recipe: Garlic Chicken Alfredo Pasta
+    <ol id="wd-your-favorite-recipe">
+      <li>
+        Cut 500 g of chicken into small pieces and season it with 2 tbsp garlic
+        powder, 1.5 tbsp paprika, 1 tbsp lime juice, 1/2 tbsp pepper, 1 tbsp
+        Italian seasoning, and salt to taste.
+      </li>
+      <li>
+        Let the chicken marinate for at least 30 minutes. The longer it
+        marinates, the tastier it gets.
+      </li>
+      <li>
+         Bring a pot of salted water to a boil, add your favorite pasta (I prefer
+        rotini), and cook it until al dente.
+      </li>
+      <li>
+         Save one cup of the pasta water, drain the rest, and rinse the pasta in
+        cold water so it doesn&apos;t overcook.
+      </li>
+      <li>
+        Heat a medium pan, add 3 to 4 tbsp of extra virgin olive oil, and cook the
+        chicken for about 3 minutes on each side. Take it off the heat and keep
+        the pan.
+     </li>
+     <li>
+        Pour the saved pasta water into the same pan and scrape up the browned,
+        smoky bits left from the chicken.
+     </li>
+     <li>
+        Add 1 tbsp of butter and a store-bought garlic Alfredo sauce (I use
+        Aldi&apos;s), plus cheese if you like, and mix well.
+      </li>
+      <li>
+        Add the pasta and chicken, give everything a good stir, and serve.
+      </li>
       </ol>
       <h5>Unordered List Tag</h5>
       My favorite books (in no particular order)
