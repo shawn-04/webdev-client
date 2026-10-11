@@ -2,12 +2,16 @@ import CourseCard from "./CourseCard";
 
 export default function Dashboard() {
   return (
-    <div id="wd-dashboard">
-      <h1 id="wd-dashboard-title">Dashboard</h1>
-      <hr />
-      <h2 id="wd-dashboard-published">Published Courses (4)</h2>
-      <hr />
-      <div id="wd-dashboard-courses">
+    <div id="wd-dashboard" className="p-4">
+      <h1 id="wd-dashboard-title" className="m-0 text-3xl font-normal">
+        Dashboard
+      </h1>
+      <hr className="my-4 border-gray-300" />
+      <h2 id="wd-dashboard-published" className="m-0 text-xl font-normal">
+        Published Courses (4)
+      </h2>
+      <hr className="my-4 border-gray-300" />
+      <div id="wd-dashboard-courses" className="flex flex-wrap gap-8">
         <CourseCard
           cid="1234"
           title="CS1234 React JS"
