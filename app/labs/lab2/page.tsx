@@ -13,11 +13,16 @@ import Zindex from "./Zindex";
 import Float from "./Float";
 import GridLayout from "./GridLayout";
 import Flex from "./Flex";
+import MediaQueriesDemo from "./MediaQueriesDemo";
+import ReactIconsSampler from "./ReactIconsSampler";
 
 export default function Lab2() {
   return (
     <div id="wd-lab2">
       <h2>Lab 2 - Cascading Style Sheets</h2>
+      <p>
+        <a href="/labs/lab2/tailwind">Open Tailwind CSS lab →</a>
+      </p>
 
       {/* 2.1.1 Style attribute */}
       <h3>Styling with the STYLE attribute</h3>
@@ -113,20 +118,22 @@ export default function Lab2() {
           Sample: tag green, class yellow, id red. The red id background wins.
         </p>
       </div>
-    <ForegroundColors />
-    <BackgroundColors />
-    <Borders />
-    <Padding />
-    <Margins />
-    <BoxModel />
-    <Corners />
-    <Dimensions />
-    <Display />
-    <Positions />
-    <Zindex />
+    <ForegroundColors/>
+    <BackgroundColors/>
+    <Borders/>
+    <Padding/>
+    <Margins/>
+    <BoxModel/>
+    <Corners/>
+    <Dimensions/>
+    <Display/>
+    <Positions/>
+    <Zindex/>
     <Float/>
-    <GridLayout />
-    <Flex />
+    <GridLayout/>
+    <Flex/>
+    <MediaQueriesDemo/>
+    <ReactIconsSampler/>
     </div>
   );
 }
