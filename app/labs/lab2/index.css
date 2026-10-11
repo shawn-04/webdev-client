@@ -93,3 +93,317 @@ p:where(#wd-ai-cascade) {
 #wd-ai-cascade {
   background-color: red;
 }
+
+/* ===== 2.1.7 Foreground color ===== */
+.wd-fg-color-black {
+  color: black;
+}
+.wd-fg-color-white {
+  color: white;
+}
+.wd-fg-color-blue {
+  color: #7070ff;
+}
+.wd-fg-color-red {
+  color: #ff7070;
+}
+.wd-fg-color-green {
+  color: green;
+}
+
+/* ===== 2.1.8 Background color ===== */
+.wd-bg-color-yellow {
+  background-color: #ffff07;
+}
+.wd-bg-color-blue {
+  background-color: #7070ff;
+}
+.wd-bg-color-red {
+  background-color: #ff7070;
+}
+.wd-bg-color-green {
+  background-color: green;
+}
+.wd-bg-color-gray {
+  background-color: lightgray;
+}
+
+/* ===== 2.1.9 Borders ===== */
+.wd-border-fat {
+  border-width: 20px 30px 20px 30px;
+}
+.wd-border-thin {
+  border-width: 4px;
+}
+.wd-border-solid {
+  border-style: solid;
+}
+.wd-border-dashed {
+  border-style: dashed;
+}
+.wd-border-yellow {
+  border-color: #ffff07;
+}
+.wd-border-red {
+  border-color: #ff7070;
+}
+.wd-border-blue {
+  border-color: #7070ff;
+}
+
+/* ===== 2.1.10 Padding ===== */
+.wd-padded-top-left {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.wd-padded-bottom-right {
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+.wd-padding-fat {
+  padding: 50px;
+}
+.wd-ai-padded-top {
+  padding-top: 50px;
+}
+
+/* ===== 2.1.10 Margins ===== */
+.wd-margin-bottom {
+  margin-bottom: 50px;
+}
+.wd-margin-right-left {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.wd-margin-all-around {
+  margin: 30px;
+}
+/* My own per-side margin */
+.wd-margin-top-only {
+  margin-top: 60px;
+}
+
+/* ===== 2.1.10 Box model ===== */
+.wd-box-model-parent {
+  display: flow-root;
+  background-color: lightgray;
+  padding-top: 8px;
+}
+.wd-box-model-margin-label,
+.wd-box-model-border-label,
+.wd-box-model-padding-label {
+  font-size: 12px;
+  line-height: 12px;
+}
+.wd-box-model-box {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid #c41e3a;
+  background-color: #cfe2ff;
+}
+.wd-box-model-border-label {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  color: #c41e3a;
+}
+.wd-box-model-margin-label {
+  position: absolute;
+  bottom: -26px;
+  left: -20px;
+}
+.wd-box-model-padding-label {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+.wd-box-model-content {
+  background-color: #d1e7dd;
+  padding: 8px;
+}
+.wd-box-sizing-demo {
+  background-color: lightgray;
+  padding: 10px;
+}
+.wd-box-sizing-content,
+.wd-box-sizing-border {
+  width: 200px;
+  height: 180px;
+  padding: 20px;
+  border: 10px solid #c41e3a;
+  background-color: #ffff07;
+  margin-bottom: 10px;
+}
+.wd-box-sizing-content {
+  box-sizing: content-box;
+}
+.wd-box-sizing-border {
+  box-sizing: border-box;
+}
+/* My own: wider border-box, should stay exactly 300px on screen */
+.wd-box-sizing-wide {
+  width: 300px;
+}
+
+/* ===== 2.1.11 Corners ===== */
+.wd-rounded-corners-top {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.wd-rounded-corners-bottom {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.wd-rounded-corners-all-around {
+  border-radius: 50px;
+}
+.wd-rounded-corners-inline {
+  border-radius: 30px 0px 20px 50px;
+}
+/* My own: big diagonal corners */
+.wd-rounded-corners-diagonal {
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+.wd-ai-rounded-left {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+/* ===== 2.1.12 Dimensions ===== */
+.wd-dimension-portrait {
+  width: 75px;
+  height: 100px;
+}
+.wd-dimension-landscape {
+  width: 100px;
+  height: 75px;
+}
+.wd-dimension-square {
+  width: 75px;
+  height: 75px;
+}
+/* My own: a wide, short box */
+.wd-dimension-banner {
+  width: 250px;
+  height: 40px;
+}
+.wd-ai-dimension {
+  width: 120px;
+  height: 60px;
+  background-color: #ffff07;
+}
+
+/* ===== 2.1.12 Display ===== */
+.wd-display-inline {
+  display: inline;
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+}
+.wd-display-inline-block {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+}
+.wd-display-block {
+  display: block;
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+}
+/* ===== 2.1.13 Relative position ===== */
+.wd-pos-relative-nudge-up-right {
+  position: relative;
+  bottom: 30px;
+  left: 30px;
+}
+.wd-pos-relative-nudge-down-right {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.wd-pos-relative {
+  position: relative;
+}
+/* My own nudge */
+.wd-pos-relative-nudge-my {
+  position: relative;
+  top: 10px;
+  left: 60px;
+}
+.wd-ai-pos-relative-nudge {
+  position: relative;
+  top: 15px;
+  right: 25px;
+}
+
+/* ===== 2.1.14 Absolute position ===== */
+.wd-pos-absolute-10-10 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.wd-pos-absolute-50-50 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.wd-pos-absolute-120-20 {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+/* My own: top-right corner of the relative parent */
+.wd-pos-absolute-tr {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.wd-ai-pos-absolute-br {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* ===== 2.1.15 Fixed position ===== */
+.wd-pos-fixed {
+  position: fixed;
+  right: 0px;
+  bottom: 50%;
+}
+/* My own fixed badge, top-right of the window */
+.wd-pos-fixed-badge {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+.wd-ai-pos-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 5px;
+  background-color: purple;
+  color: white;
+}
+
+/* ===== 2.1.16 Z-index ===== */
+.wd-zindex-bring-to-front {
+  z-index: 10;
+}
+/* My own: sits above the square, below the landscape */
+.wd-zindex-my-box {
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  z-index: 5;
+}
+.wd-ai-zindex-top {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  z-index: 20;
+}
