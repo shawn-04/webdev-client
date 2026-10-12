@@ -19,6 +19,7 @@ export default function Signin() {
         type="password"
         className={input}
       />
+
       <Link
         href="/dashboard"
         id="wd-signin-btn"

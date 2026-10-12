@@ -1,6 +1,7 @@
 import { AiOutlineDashboard } from "react-icons/ai";
 import { IoCalendarOutline } from "react-icons/io5";
-import { LiaBookSolid, LiaCogSolid } from "react-icons/lia";
+import { LiaBookSolid } from "react-icons/lia";
+import { LuFlaskConical } from "react-icons/lu";
 import { FaInbox, FaRegCircleUser } from "react-icons/fa6";
 import Link from "next/link";
 
@@ -76,7 +77,7 @@ export default function KambazNavigation() {
         id="wd-labs-link"
         className="block bg-black py-3 text-center text-sm text-white no-underline"
       >
-        <LiaCogSolid className="inline-block text-3xl text-red-600" />
+        <LuFlaskConical className="inline-block text-3xl text-red-600" />
         <br />
         Labs
       </Link>

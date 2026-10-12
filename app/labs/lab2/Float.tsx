@@ -31,13 +31,14 @@ export default function Float() {
         <div className="wd-float-done" />
       </div>
 
-      {/* My own: a green box floated left with text wrapping around it */}
+            {/* My own: a green box floated left with text wrapping around it */}
       <div>
         <div className="wd-float-left wd-dimension-landscape wd-bg-color-green wd-fg-color-white">
           My float
         </div>
-        I float a green box to the left so this text wraps around its right
-        side. {LOREM}
+        I play soccer every other day, but a stress fracture has me benched for
+        the next 4 to 6 weeks. I&apos;m still going on a hike tomorrow though
+        cause I don&apos;t wanna miss the fall foliage. Hope I don&apos;t die!
         <div className="wd-float-done" />
       </div>
 
@@ -46,9 +47,7 @@ export default function Float() {
         <div className="wd-float-right wd-dimension-square wd-bg-color-blue wd-fg-color-white">
           Sample
         </div>
-        I play soccer every other day, but a stress fracture has me benched for
-        the next 4 to 6 weeks. I&apos;m still going on a hike tomorrow though cause I don't wanna miss the fall foliage.
-        Hope I don&apos;t die!
+        {LOREM}
         <div className="wd-float-done" />
       </div>
     </div>
