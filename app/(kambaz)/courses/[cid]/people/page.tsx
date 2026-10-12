@@ -1,11 +1,13 @@
 import { FaUserCircle } from "react-icons/fa";
 
 const people = [
-  { first: "David", last: "Troy", login: "001234561S", section: "S101", role: "STUDENT", lastActivity: "2026-10-01", total: "10:21:32" },
+  { first: "Drake", last: "Maye", login: "001234561S", section: "S101", role: "STUDENT", lastActivity: "2026-10-01", total: "10:21:32" },
   { first: "Aaron", last: "Hring", login: "001234562S", section: "S101", role: "STUDENT", lastActivity: "2026-10-03", total: "08:45:10" },
   { first: "William", last: "Hopper", login: "001234563S", section: "S101", role: "TA", lastActivity: "2026-10-05", total: "15:02:47" },
   { first: "Hunter", last: "Kirkman", login: "001234564S", section: "S101", role: "STUDENT", lastActivity: "2026-10-06", total: "06:12:05" },
   { first: "Shawn", last: "Godfrey", login: "001234565S", section: "S101", role: "STUDENT", lastActivity: "2026-10-09", total: "12:30:00" },
+  { first: "Lionel", last: "Messi", login: "001234566S", section: "S101", role: "STUDENT", lastActivity: "2026-10-02", total: "11:30:00" },
+  { first: "Cristiano", last: "Ronaldo", login: "001234567S", section: "S101", role: "STUDENT", lastActivity: "2026-10-05", total: "09:20:00" },
 ];
 
 const th = "border-b-2 border-gray-300 px-3 py-2 text-left font-semibold";

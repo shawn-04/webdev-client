@@ -9,28 +9,28 @@ export default function Profile() {
       <h3 className="mt-0 mb-4 text-2xl font-normal">Profile</h3>
 
       <label htmlFor="wd-username" className={label}>Username</label>
-      <input id="wd-username" defaultValue="alice" placeholder="username" className={input} />
+      <input id="wd-username" defaultValue="CR7" placeholder="username" className={input} />
 
       <label htmlFor="wd-password" className={label}>Password</label>
       <input
         id="wd-password"
-        defaultValue="123"
+        defaultValue="0000007"
         placeholder="password"
         type="password"
         className={input}
       />
 
       <label htmlFor="wd-firstname" className={label}>First name</label>
-      <input id="wd-firstname" defaultValue="Alice" placeholder="First Name" className={input} />
+      <input id="wd-firstname" defaultValue="Cristiano" placeholder="First Name" className={input} />
 
       <label htmlFor="wd-lastname" className={label}>Last name</label>
-      <input id="wd-lastname" defaultValue="Wonderland" placeholder="Last Name" className={input} />
+      <input id="wd-lastname" defaultValue="Ronaldo" placeholder="Last Name" className={input} />
 
       <label htmlFor="wd-dob" className={label}>Date of birth</label>
       <input id="wd-dob" defaultValue="2000-01-01" type="date" className={input} />
 
       <label htmlFor="wd-email" className={label}>Email</label>
-      <input id="wd-email" defaultValue="alice@wonderland.com" type="email" className={input} />
+      <input id="wd-email" defaultValue="cr7@goat.com" type="email" className={input} />
 
       <label htmlFor="wd-role" className={label}>Role</label>
       <select id="wd-role" defaultValue="FACULTY" className={input}>
