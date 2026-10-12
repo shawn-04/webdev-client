@@ -8,14 +8,14 @@ export default function Dashboard() {
       </h1>
       <hr className="my-4 border-gray-300" />
       <h2 id="wd-dashboard-published" className="m-0 text-xl font-normal">
-        Published Courses (4)
+        Published Courses (5)
       </h2>
       <hr className="my-4 border-gray-300" />
       <div id="wd-dashboard-courses" className="flex flex-wrap gap-8">
         <CourseCard
           cid="1234"
           title="CS1234 React JS"
-          description="Full Stack software developer"
+          description="Shawn's favorite: building UIs one component at a time"
           image="/images/reactjs.jpg"
         />
         <CourseCard
@@ -36,6 +36,14 @@ export default function Dashboard() {
           description="Server and client rendering with the App Router"
           image="/images/nextjs.jpg"
         />
+        <div id="wd-ai-course-card">
+          <CourseCard
+            cid="5678"
+            title="CS5678 Robotics"
+            description="Sample course: building and programming humanoid robots"
+            image="/images/teslabot.jpg"
+          />
+        </div>
       </div>
     </div>
   );
