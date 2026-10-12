@@ -15,7 +15,7 @@ export default function Dashboard() {
         <CourseCard
           cid="1234"
           title="CS1234 React JS"
-          description="Shawn's favorite: building UIs one component at a time"
+          description="My favorite class this semester, no contest"
           image="/images/reactjs.jpg"
         />
         <CourseCard

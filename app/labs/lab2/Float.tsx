@@ -46,7 +46,9 @@ export default function Float() {
         <div className="wd-float-right wd-dimension-square wd-bg-color-blue wd-fg-color-white">
           Sample
         </div>
-        {LOREM}
+        I play soccer every other day, but a stress fracture has me benched for
+        the next 4 to 6 weeks. I&apos;m still going on a hike tomorrow though cause I don't wanna miss the fall foliage.
+        Hope I don&apos;t die!
         <div className="wd-float-done" />
       </div>
     </div>
