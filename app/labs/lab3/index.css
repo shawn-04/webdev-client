@@ -1,0 +1,12 @@
+.wd-lab3-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 6px;
+  color: black;
+}
+.wd-lab3-bg-yellow { background-color: lightyellow; }
+.wd-lab3-bg-blue   { background-color: lightblue; }
+.wd-lab3-bg-red    { background-color: lightcoral; }
+.wd-lab3-bg-green  { background-color: lightgreen; }
+.wd-lab3-bg-pink   { background-color: pink; }
+.wd-lab3-bg-purple { background-color: plum; }

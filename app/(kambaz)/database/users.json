@@ -1,0 +1,9 @@
+[
+  { "_id": "U001", "username": "jannunzi", "firstName": "Jose", "lastName": "Annunziato", "email": "jose@neu.edu", "role": "FACULTY", "loginId": "001000001", "section": "S101", "lastActivity": "2026-10-20", "totalActivity": "10:21:32" },
+  { "_id": "U002", "username": "shawn", "firstName": "Shawn", "lastName": "Godfrey", "email": "shawn@neu.edu", "role": "STUDENT", "loginId": "001000002", "section": "S101", "lastActivity": "2026-10-21", "totalActivity": "15:32:43" },
+  { "_id": "U003", "username": "alice", "firstName": "Alice", "lastName": "Wonderland", "email": "alice@neu.edu", "role": "STUDENT", "loginId": "001000003", "section": "S101", "lastActivity": "2026-10-19", "totalActivity": "08:12:05" },
+  { "_id": "U004", "username": "bob", "firstName": "Bob", "lastName": "Builder", "email": "bob@neu.edu", "role": "TA", "loginId": "001000004", "section": "S101", "lastActivity": "2026-10-18", "totalActivity": "12:44:10" },
+  { "_id": "U005", "username": "carol", "firstName": "Carol", "lastName": "Danvers", "email": "carol@neu.edu", "role": "STUDENT", "loginId": "001000005", "section": "S102", "lastActivity": "2026-10-17", "totalActivity": "05:20:55" },
+  { "_id": "U006", "username": "dave", "firstName": "Dave", "lastName": "Lister", "email": "dave@neu.edu", "role": "STUDENT", "loginId": "001000006", "section": "S102", "lastActivity": "2026-10-16", "totalActivity": "03:10:00" },
+  { "_id": "U007", "username": "erin", "firstName": "Erin", "lastName": "Hannon", "email": "erin@neu.edu", "role": "FACULTY", "loginId": "001000007", "section": "S102", "lastActivity": "2026-10-15", "totalActivity": "20:01:12" }
+]

@@ -1,43 +1,40 @@
+"use client";
 import Link from "next/link";
-import "../../kambaz.css";
+import { useParams, usePathname } from "next/navigation";
 
-const linkBase =
-  "block border-l-4 px-3 py-2 text-base no-underline hover:bg-gray-100";
-const active = `${linkBase} border-black text-black`;
-const inactive = `${linkBase} border-transparent text-red-600`;
+const links = [
+  { label: "Home", path: "home" },
+  { label: "Modules", path: "modules" },
+  { label: "Piazza", path: "piazza" },
+  { label: "Zoom", path: "zoom" },
+  { label: "Assignments", path: "assignments" },
+  { label: "Quizzes", path: "quizzes" },
+  { label: "Grades", path: "grades" },
+  { label: "People", path: "people/table" },
+];
 
-export default function CourseNavigation({ cid }: { cid: string }) {
-  const base = `/courses/${cid}`;
+export default function CourseNavigation() {
+  const { cid } = useParams<{ cid: string }>();
+  const pathname = usePathname();
   return (
-    <div id="wd-courses-navigation" className="me-4">
-      <Link href={`${base}/home`} id="wd-course-home-link" className={active}>
-        Home
-      </Link>
-      <Link href={`${base}/modules`} id="wd-course-modules-link" className={inactive}>
-        Modules
-      </Link>
-      <Link href={`${base}/piazza`} id="wd-course-piazza-link" className={inactive}>
-        Piazza
-      </Link>
-      <Link href={`${base}/zoom`} id="wd-course-zoom-link" className={inactive}>
-        Zoom
-      </Link>
-      <Link
-        href={`${base}/assignments`}
-        id="wd-course-assignments-link"
-        className={inactive}
-      >
-        Assignments
-      </Link>
-      <Link href={`${base}/quizzes`} id="wd-course-quizzes-link" className={inactive}>
-        Quizzes
-      </Link>
-      <Link href={`${base}/grades`} id="wd-course-grades-link" className={inactive}>
-        Grades
-      </Link>
-      <Link href={`${base}/people`} id="wd-course-people-link" className={inactive}>
-        People
-      </Link>
+    <div id="wd-courses-navigation" className="flex flex-col">
+      {links.map((link) => {
+        const section = link.path.split("/")[0];
+        const active = pathname.startsWith(`/courses/${cid}/${section}`);
+        return (
+          <Link
+            key={link.path}
+            id={`wd-course-${section}-link`}
+            href={`/courses/${cid}/${link.path}`}
+            aria-current={active ? "page" : undefined}
+            className={`px-3 py-2 border-l-4 ${
+              active ? "border-black text-black font-semibold" : "border-transparent text-red-600"
+            }`}
+          >
+            {link.label}
+          </Link>
+        );
+      })}
     </div>
   );
 }

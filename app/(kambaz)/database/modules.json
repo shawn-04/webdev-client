@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "M101",
+    "name": "Week 1 - HTML",
+    "description": "Structuring web content",
+    "course": "CS5610",
+    "lessons": [
+      { "_id": "L101", "name": "Learning Objectives", "description": "Intro to HTML", "module": "M101" },
+      { "_id": "L102", "name": "Headings, lists, and tables", "description": "Basic tags", "module": "M101" },
+      { "_id": "L103", "name": "Forms", "description": "Inputs and buttons", "module": "M101" }
+    ]
+  },
+  {
+    "_id": "M102",
+    "name": "Week 2 - CSS and Tailwind",
+    "description": "Styling pages",
+    "course": "CS5610",
+    "lessons": [
+      { "_id": "L104", "name": "Selectors", "description": "ID, class, and structure", "module": "M102" },
+      { "_id": "L105", "name": "Box model and flex", "description": "Layout", "module": "M102" }
+    ]
+  },
+  {
+    "_id": "M103",
+    "name": "Week 3 - JavaScript",
+    "description": "Data-driven UI",
+    "course": "CS5610",
+    "lessons": [
+      { "_id": "L106", "name": "Arrays and objects", "description": "map, filter, find", "module": "M103" },
+      { "_id": "L107", "name": "Client and server components", "description": "Next.js rendering", "module": "M103" }
+    ]
+  },
+  {
+    "_id": "M201",
+    "name": "Week 1 - Relational Model",
+    "description": "Tables and keys",
+    "course": "CS5200",
+    "lessons": [
+      { "_id": "L201", "name": "Entities and relationships", "description": "ER diagrams", "module": "M201" },
+      { "_id": "L202", "name": "Primary and foreign keys", "description": "Constraints", "module": "M201" }
+    ]
+  },
+  {
+    "_id": "M202",
+    "name": "Week 2 - SQL",
+    "description": "Querying data",
+    "course": "CS5200",
+    "lessons": [
+      { "_id": "L203", "name": "SELECT and WHERE", "description": "Filtering rows", "module": "M202" },
+      { "_id": "L204", "name": "JOINs", "description": "Combining tables", "module": "M202" }
+    ]
+  },
+  {
+    "_id": "M301",
+    "name": "Week 1 - Agile",
+    "description": "Scrum and sprints",
+    "course": "CS5500",
+    "lessons": [
+      { "_id": "L301", "name": "User stories", "description": "Writing requirements", "module": "M301" }
+    ]
+  }
+]

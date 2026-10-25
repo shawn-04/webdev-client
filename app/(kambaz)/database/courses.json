@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "CS5610",
+    "name": "Web Development",
+    "number": "CS5610",
+    "startDate": "2026-09-02",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 4,
+    "image": "/images/reactjs.jpg",
+    "description": "Full stack web applications with React, Next.js, Node.js, and MongoDB"
+  },
+  {
+    "_id": "CS5200",
+    "name": "Database Management Systems",
+    "number": "CS5200",
+    "startDate": "2026-09-02",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 4,
+    "image": "/images/mongodb.jpg",
+    "description": "Relational and document databases, SQL, and data modeling"
+  },
+  {
+    "_id": "CS5500",
+    "name": "Foundations of Software Engineering",
+    "number": "CS5500",
+    "startDate": "2026-09-02",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 4,
+    "image": "/images/nodejs.jpg",
+    "description": "Agile teams, testing, and building maintainable software"
+  },
+  {
+    "_id": "CS5800",
+    "name": "Algorithms",
+    "number": "CS5800",
+    "startDate": "2026-09-02",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 4,
+    "image": "/images/nextjs.jpg",
+    "description": "Graph algorithms, dynamic programming, and complexity"
+  }
+]

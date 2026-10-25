@@ -1,49 +1,29 @@
-import CourseCard from "./CourseCard";
+import Link from "next/link";
+import { courses } from "../database";
 
 export default function Dashboard() {
   return (
-    <div id="wd-dashboard" className="p-4">
-      <h1 id="wd-dashboard-title" className="m-0 text-3xl font-normal">
-        Dashboard
-      </h1>
-      <hr className="my-4 border-gray-300" />
-      <h2 id="wd-dashboard-published" className="m-0 text-xl font-normal">
-        Published Courses (5)
+    <div id="wd-dashboard">
+      <h1 id="wd-dashboard-title" className="text-3xl font-semibold">Dashboard</h1>
+      <hr className="my-3" />
+      <h2 id="wd-dashboard-published" className="text-xl mb-3">
+        Published Courses ({courses.length})
       </h2>
-      <hr className="my-4 border-gray-300" />
-      <div id="wd-dashboard-courses" className="flex flex-wrap gap-8">
-        <CourseCard
-          cid="1234"
-          title="CS1234 React JS"
-          description="My favorite class this semester, no contest"
-          image="/images/reactjs.jpg"
-        />
-        <CourseCard
-          cid="2345"
-          title="CS2345 Node.js"
-          description="Building HTTP servers and REST APIs"
-          image="/images/nodejs.jpg"
-        />
-        <CourseCard
-          cid="3456"
-          title="CS3456 MongoDB"
-          description="Storing and querying application data"
-          image="/images/mongodb.jpg"
-        />
-        <CourseCard
-          cid="4567"
-          title="CS4567 Next.js"
-          description="Server and client rendering with the App Router"
-          image="/images/nextjs.jpg"
-        />
-        <div id="wd-ai-course-card">
-          <CourseCard
-            cid="5678"
-            title="CS5678 Robotics"
-            description="Sample course: building and programming humanoid robots"
-            image="/images/teslabot.jpg"
-          />
-        </div>
+      <hr className="mb-4" />
+      <div id="wd-dashboard-courses" className="grid gap-6 grid-cols-[repeat(auto-fill,260px)]">
+        {courses.map((course) => (
+          <div key={course._id} className="wd-dashboard-course border rounded overflow-hidden w-[260px]">
+            <Link href={`/courses/${course._id}/home`} className="block text-inherit no-underline">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={course.image} alt={course.name} width="100%" className="w-full h-[160px] object-cover bg-gray-200" />
+              <div className="p-3">
+                <h5 className="font-semibold truncate">{course.name}</h5>
+                <p className="text-sm text-gray-600 h-[60px] overflow-hidden">{course.description}</p>
+                <span className="inline-block mt-2 px-3 py-1 bg-blue-600 text-white rounded text-sm">Go</span>
+              </div>
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );
