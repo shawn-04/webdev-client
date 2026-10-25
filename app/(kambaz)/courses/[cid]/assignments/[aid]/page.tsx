@@ -5,7 +5,7 @@ import { assignments } from "../../../../database";
 
 export default function AssignmentEditor() {
   const { cid, aid } = useParams<{ cid: string; aid: string }>();
-  const assignment = assignments.find((a) => a._id === aid && a.course === cid);
+  const assignment = assignments.find((a) => a._id === aid);
   return (
     <div id="wd-assignments-editor" key={aid} className="max-w-2xl">
       <label htmlFor="wd-name" className="block mb-1">Assignment Name</label>

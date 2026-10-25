@@ -1,6 +1,6 @@
 [
   {
-    "_id": "CS5610",
+    "_id": "RS101",
     "name": "Web Development",
     "number": "CS5610",
     "startDate": "2026-09-02",
@@ -11,7 +11,7 @@
     "description": "Full stack web applications with React, Next.js, Node.js, and MongoDB"
   },
   {
-    "_id": "CS5200",
+    "_id": "RS102",
     "name": "Database Management Systems",
     "number": "CS5200",
     "startDate": "2026-09-02",
@@ -22,7 +22,7 @@
     "description": "Relational and document databases, SQL, and data modeling"
   },
   {
-    "_id": "CS5500",
+    "_id": "RS103",
     "name": "Foundations of Software Engineering",
     "number": "CS5500",
     "startDate": "2026-09-02",
@@ -33,7 +33,7 @@
     "description": "Agile teams, testing, and building maintainable software"
   },
   {
-    "_id": "CS5800",
+    "_id": "RS104",
     "name": "Algorithms",
     "number": "CS5800",
     "startDate": "2026-09-02",

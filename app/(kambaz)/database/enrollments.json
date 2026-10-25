@@ -1,12 +1,12 @@
 [
-  { "_id": "E001", "user": "U001", "course": "CS5610" },
-  { "_id": "E002", "user": "U002", "course": "CS5610" },
-  { "_id": "E003", "user": "U003", "course": "CS5610" },
-  { "_id": "E004", "user": "U004", "course": "CS5610" },
-  { "_id": "E005", "user": "U007", "course": "CS5200" },
-  { "_id": "E006", "user": "U002", "course": "CS5200" },
-  { "_id": "E007", "user": "U005", "course": "CS5200" },
-  { "_id": "E008", "user": "U006", "course": "CS5200" },
-  { "_id": "E009", "user": "U003", "course": "CS5500" },
-  { "_id": "E010", "user": "U005", "course": "CS5500" }
+  { "_id": "E001", "user": "U001", "course": "RS101" },
+  { "_id": "E002", "user": "U002", "course": "RS101" },
+  { "_id": "E003", "user": "U003", "course": "RS101" },
+  { "_id": "E004", "user": "U004", "course": "RS101" },
+  { "_id": "E005", "user": "U007", "course": "RS102" },
+  { "_id": "E006", "user": "U002", "course": "RS102" },
+  { "_id": "E007", "user": "U005", "course": "RS102" },
+  { "_id": "E008", "user": "U006", "course": "RS102" },
+  { "_id": "E009", "user": "U003", "course": "RS103" },
+  { "_id": "E010", "user": "U005", "course": "RS103" }
 ]
