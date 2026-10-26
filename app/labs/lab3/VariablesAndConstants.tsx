@@ -4,6 +4,7 @@ export default function VariablesAndConstants() {
   const constant1 = functionScoped - blockScoped;
   let myName = "Shawn";
   const greeting = `Hello, ${myName}!`;
+  const sampleSum = functionScoped + blockScoped;
   return (
     <div id="wd-variables-and-constants">
       <h4>Variables and Constants</h4>
@@ -16,6 +17,8 @@ export default function VariablesAndConstants() {
       myName = {myName}
       <br />
       greeting = {greeting}
+      <br />
+      sampleSum = {sampleSum}
       <hr />
     </div>
   );

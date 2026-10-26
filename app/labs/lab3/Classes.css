@@ -1,9 +1,4 @@
-.wd-lab3-box {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 6px;
-  color: black;
-}
+.wd-lab3-box { width: 100%; padding: 10px; margin-bottom: 6px; color: black; }
 .wd-lab3-bg-yellow { background-color: lightyellow; }
 .wd-lab3-bg-blue   { background-color: lightblue; }
 .wd-lab3-bg-red    { background-color: lightcoral; }

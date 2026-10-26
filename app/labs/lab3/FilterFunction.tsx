@@ -3,6 +3,7 @@ export default function FilterFunction() {
   const numbersGreaterThan2 = numberArray1.filter((a) => a > 2);
   const evenNumbers = numberArray1.filter((a) => a % 2 === 0);
   const oddNumbers = numberArray1.filter((a) => a % 2 !== 0);
+  const numbersLessThan2 = numberArray1.filter((a) => a < 2);
   const atLeast5 = numberArray1.filter((a) => a >= 5);
   return (
     <div id="wd-filter-function">
@@ -12,6 +13,8 @@ export default function FilterFunction() {
       evenNumbers = {evenNumbers}
       <br />
       oddNumbers = {oddNumbers}
+      <br />
+      numbersLessThan2 = {numbersLessThan2}
       <br />
       atLeast5 = {atLeast5}
       <hr />

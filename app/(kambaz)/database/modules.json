@@ -1,62 +1,34 @@
 [
-  {
-    "_id": "M101",
-    "name": "Week 1 - HTML",
-    "description": "Structuring web content",
-    "course": "RS101",
-    "lessons": [
-      { "_id": "L101", "name": "Learning Objectives", "description": "Intro to HTML", "module": "M101" },
-      { "_id": "L102", "name": "Headings, lists, and tables", "description": "Basic tags", "module": "M101" },
-      { "_id": "L103", "name": "Forms", "description": "Inputs and buttons", "module": "M101" }
-    ]
-  },
-  {
-    "_id": "M102",
-    "name": "Week 2 - CSS and Tailwind",
-    "description": "Styling pages",
-    "course": "RS101",
-    "lessons": [
-      { "_id": "L104", "name": "Selectors", "description": "ID, class, and structure", "module": "M102" },
-      { "_id": "L105", "name": "Box model and flex", "description": "Layout", "module": "M102" }
-    ]
-  },
-  {
-    "_id": "M103",
-    "name": "Week 3 - JavaScript",
-    "description": "Data-driven UI",
-    "course": "RS101",
-    "lessons": [
-      { "_id": "L106", "name": "Arrays and objects", "description": "map, filter, find", "module": "M103" },
-      { "_id": "L107", "name": "Client and server components", "description": "Next.js rendering", "module": "M103" }
-    ]
-  },
-  {
-    "_id": "M201",
-    "name": "Week 1 - Relational Model",
-    "description": "Tables and keys",
-    "course": "RS102",
-    "lessons": [
-      { "_id": "L201", "name": "Entities and relationships", "description": "ER diagrams", "module": "M201" },
-      { "_id": "L202", "name": "Primary and foreign keys", "description": "Constraints", "module": "M201" }
-    ]
-  },
-  {
-    "_id": "M202",
-    "name": "Week 2 - SQL",
-    "description": "Querying data",
-    "course": "RS102",
-    "lessons": [
-      { "_id": "L203", "name": "SELECT and WHERE", "description": "Filtering rows", "module": "M202" },
-      { "_id": "L204", "name": "JOINs", "description": "Combining tables", "module": "M202" }
-    ]
-  },
-  {
-    "_id": "M301",
-    "name": "Week 1 - Agile",
-    "description": "Scrum and sprints",
-    "course": "RS103",
-    "lessons": [
-      { "_id": "L301", "name": "User stories", "description": "Writing requirements", "module": "M301" }
-    ]
-  }
+  { "_id": "M101", "name": "Introduction to Rocket Propulsion", "description": "Basic principles of rocket propulsion", "course": "RS101", "lessons": [
+    { "_id": "L101", "name": "History of Rocketry", "description": "From early rockets to modern launch vehicles", "module": "M101" },
+    { "_id": "L102", "name": "Newton's Third Law", "description": "Action and reaction in propulsion", "module": "M101" },
+    { "_id": "L103", "name": "The Rocket Equation", "description": "Relating mass, velocity, and thrust", "module": "M101" },
+    { "_id": "L104", "name": "Shawn's Launch Day Notes", "description": "My own lesson on launch sequencing", "module": "M101" }
+  ] },
+  { "_id": "M102", "name": "Fuel and Combustion", "description": "Propellants and combustion processes", "course": "RS101", "lessons": [
+    { "_id": "L201", "name": "Solid Propellants", "description": "How solid fuels burn", "module": "M102" },
+    { "_id": "L202", "name": "Liquid Propellants", "description": "Fuel and oxidizer systems", "module": "M102" },
+    { "_id": "L203", "name": "Combustion Chambers", "description": "Pressure and temperature inside the engine", "module": "M102" },
+    { "_id": "L204", "name": "Nozzle Design", "description": "How nozzle shape affects thrust.", "module": "M102" }
+  ] },
+  { "_id": "M103", "name": "Propulsion Testing", "description": "Static fires and test stands", "course": "RS101", "lessons": [
+    { "_id": "L301", "name": "Test Stand Setup", "description": "Instrumenting an engine test", "module": "M103" }
+  ] },
+  { "_id": "M201", "name": "Fundamentals of Aerodynamics", "description": "Lift, drag, and airflow", "course": "RS102", "lessons": [
+    { "_id": "L401", "name": "Bernoulli's Principle", "description": "Pressure and velocity", "module": "M201" },
+    { "_id": "L402", "name": "Lift and Drag", "description": "Forces on an airfoil", "module": "M201" }
+  ] },
+  { "_id": "M202", "name": "Supersonic Flow", "description": "Shock waves and compressibility", "course": "RS102", "lessons": [
+    { "_id": "L403", "name": "Shock Waves", "description": "What happens past Mach 1", "module": "M202" }
+  ] },
+  { "_id": "M301", "name": "Spacecraft Systems", "description": "Power, thermal, and communications", "course": "RS103", "lessons": [
+    { "_id": "L501", "name": "Power Systems", "description": "Solar arrays and batteries", "module": "M301" }
+  ] },
+  { "_id": "M501", "name": "Week 1 - HTML", "description": "Structuring web content", "course": "RS105", "lessons": [
+    { "_id": "L601", "name": "Headings, lists, and tables", "description": "Basic tags", "module": "M501" },
+    { "_id": "L602", "name": "Forms", "description": "Inputs and buttons", "module": "M501" }
+  ] },
+  { "_id": "M502", "name": "Week 3 - JavaScript", "description": "Data-driven UI", "course": "RS105", "lessons": [
+    { "_id": "L603", "name": "Arrays and objects", "description": "map, filter, find", "module": "M502" }
+  ] }
 ]

@@ -11,6 +11,8 @@ export default function FindIndex() {
       <br />
       string3Index = {string3Index}
       <br />
+      sixIndex = {numberArray1.findIndex((a) => a === 6)}
+      <br />
       threeIndex = {threeIndex}
       <hr />
     </div>

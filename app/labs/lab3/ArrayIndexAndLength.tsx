@@ -10,6 +10,8 @@ export default function ArrayIndexAndLength() {
       <br />
       index1 = {index1}
       <br />
+      indexOf1 = {numberArray1.indexOf(1)}
+      <br />
       indexOf(9) = {index9}
       <hr />
     </div>

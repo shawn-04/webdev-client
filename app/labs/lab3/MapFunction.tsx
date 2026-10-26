@@ -2,11 +2,12 @@ export default function MapFunction() {
   let numberArray1 = [1, 2, 3, 4, 5, 6];
   const square = (a: number) => a * a;
   const todos = [
-  "Study for Mid terms",
-  "Meal prep for the next week",
-  "Clean the living room",
-  "Submit Assignment",
-];
+    "Study for Mid terms",
+    "Meal prep for the next week",
+    "Clean the living room",
+    "Submit Assignment",
+    "Email the TA",
+  ];
   const squares = numberArray1.map(square);
   const cubes = numberArray1.map((a) => a * a * a);
   return (
@@ -15,6 +16,8 @@ export default function MapFunction() {
       squares = {squares}
       <br />
       cubes = {cubes}
+      <br />
+      doubles = {numberArray1.map((a) => a * 2)}
       <br />
       Todos:
       <ol>

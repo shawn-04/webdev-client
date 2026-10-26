@@ -5,6 +5,7 @@ export default function PathParameters() {
     [1, 2],
     [3, 4],
     [12, 30],
+    [5, 6],
   ];
   return (
     <div id="wd-path-parameters">
@@ -12,7 +13,7 @@ export default function PathParameters() {
       {pairs.map(([a, b]) => (
         <div key={`${a}-${b}`}>
           <Link href={`/labs/lab3/add/${a}/${b}`} id={`wd-path-parameter-add-${a}-${b}`}>
-            /labs/lab3/add/{a}/{b}
+            {a} + {b}
           </Link>
         </div>
       ))}

@@ -1,0 +1,7 @@
+[
+  { "title": "Study for Mid terms", "status": "COMPLETED", "done": true },
+  { "title": "Meal prep for the next week", "status": "COMPLETED", "done": true },
+  { "title": "Clean the living room", "status": "IN PROGRESS", "done": false },
+  { "title": "Submit Assignment", "status": "PENDING", "done": false },
+  { "title": "Email the TA", "status": "COMPLETED", "done": true }
+]

@@ -9,7 +9,8 @@ export default function AssignmentEditor() {
   return (
     <div id="wd-assignments-editor" key={aid} className="max-w-2xl">
       <label htmlFor="wd-name" className="block mb-1">Assignment Name</label>
-      <input id="wd-name" defaultValue={assignment?.title ?? ""} className="w-full border px-3 py-2 rounded mb-4" />
+      <input id="wd-name" defaultValue={assignment?.title ?? ""} className="w-full border px-3 py-2 rounded mb-1" />
+      <p id="wd-assignment-id" className="text-sm text-gray-600 mb-4">Assignment id: {aid}</p>
       <textarea
         id="wd-description"
         defaultValue={assignment?.description ?? ""}

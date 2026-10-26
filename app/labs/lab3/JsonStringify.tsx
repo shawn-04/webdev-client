@@ -6,6 +6,8 @@ export default function JsonStringify() {
       <h3>JSON Stringify</h3>
       squares = {JSON.stringify(squares)}
       <br />
+      sampleCourse = {JSON.stringify({ course: "RS102", modules: 3 })}
+      <br />
       course = {JSON.stringify(course)}
       <hr />
     </div>

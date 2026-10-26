@@ -9,6 +9,7 @@ export default function SimpleArrays() {
     <li key={2}>Feed the pets</li>,
   ];
   htmlArray1.push(<li key={3}>Play soccer</li>);
+  htmlArray1.push(<li key={4}>Call the dentist</li>);
   let variableArray1 = [
     functionScoped,
     blockScoped,

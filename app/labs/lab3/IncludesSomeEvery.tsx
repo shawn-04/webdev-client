@@ -18,6 +18,8 @@ export default function IncludesSomeEvery() {
       every(n &gt; 4) = {numbers.every((n) => n > 4) + ""}
       <br />
       some(n === 1) = {numbers.some((n) => n === 1) + ""}
+      <br />
+      includes(5) = {numbers.includes(5) + ""}
       <hr />
     </div>
   );

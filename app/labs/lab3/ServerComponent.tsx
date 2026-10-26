@@ -5,11 +5,7 @@ import os from "os";
 function readFileNames(): string[] {
   try {
     const dir = path.join(process.cwd(), "app", "labs", "lab3");
-    const files = fs.readdirSync(dir).filter((f) => f.endsWith(".tsx"));
-    if (files.length >= 3) return files.slice(0, 8);
-  } catch {}
-  try {
-    return fs.readdirSync(process.cwd()).slice(0, 8);
+    return fs.readdirSync(dir).filter((f) => f.endsWith(".tsx")).slice(0, 8);
   } catch {
     return [];
   }
@@ -17,11 +13,12 @@ function readFileNames(): string[] {
 
 export default function ServerComponent() {
   const files = readFileNames();
-  const serverInfo = {
-    platform: os.platform(),
-    arch: os.arch(),
+    const serverInfo = {
+    platform: process.platform,
+    arch: process.arch,
+    pid: process.pid,
     nodeVersion: process.version,
-    cpus: os.cpus().length,
+    serverRenderTime: new Date().toISOString(),
   };
   return (
     <div id="wd-server-component">

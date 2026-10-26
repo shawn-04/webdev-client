@@ -36,9 +36,10 @@ import SuspenseDemo from "./SuspenseDemo";
 import ClientOnlyApis from "./ClientOnlyApis";
 import ServerOnlyApis from "./ServerOnlyApis";
 import Add from "./Add";
+import Square from "./Square";
 import Highlight from "./Highlight";
 import PathParameters from "./PathParameters";
-import TodoList from "./TodoList";
+import TodoList from "./todos/TodoList";
 
 export default function Lab3() {
   console.log("Hello World!");
@@ -94,6 +95,15 @@ export default function Lab3() {
         <h4>Child Components</h4>
         <Add a={3} b={4} />
         <Add a={10} b={20} />
+        <Add a={7} b={8} />
+      </div>
+
+      <div id="wd-square">
+        <h4>Square</h4>
+        <p>Square of 4 = <Square>4</Square></p>
+        <p>Square of 9 = <Square>9</Square></p>
+        <p>Square of 5 = <Square>5</Square></p>
+        <hr />
       </div>
 
       <div id="wd-composing-styles">
@@ -107,9 +117,7 @@ export default function Lab3() {
           <Highlight>Every component I build makes Kambaz a little more real.</Highlight>
         </p>
         <p>
-          <Highlight>
-            Children can be text, <b>bold text</b>, or any other JSX
-          </Highlight>
+          <Highlight>Children can be any JSX</Highlight>
         </p>
         <hr />
       </div>

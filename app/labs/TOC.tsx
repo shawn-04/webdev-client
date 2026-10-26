@@ -2,22 +2,30 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const labLinks = [
-  { href: "/labs", label: "Home" },
-  { href: "/labs/lab1", label: "Lab 1" },
-  { href: "/labs/lab2", label: "Lab 2" },
-  { href: "/labs/lab3", label: "Lab 3" },
-  { href: "/labs/lab4", label: "Lab 4" },
-  { href: "/labs/lab5", label: "Lab 5" },
+const LINKS = [
+  { href: "/labs", id: "wd-labs-home-link", label: "Home", match: (p: string) => p === "/labs" },
+  { href: "/labs/lab1", id: "wd-lab1-link", label: "Lab 1", match: (p: string) => p.startsWith("/labs/lab1") },
+  { href: "/labs/lab2", id: "wd-lab2-link", label: "Lab 2", match: (p: string) => p.startsWith("/labs/lab2") },
+  { href: "/labs/lab3", id: "wd-lab3-link", label: "Lab 3", match: (p: string) => p.startsWith("/labs/lab3") },
+  { href: "/labs/lab4", id: "wd-lab4-link", label: "Lab 4", match: (p: string) => p.startsWith("/labs/lab4") },
+  { href: "/labs/lab5", id: "wd-lab5-link", label: "Lab 5", match: (p: string) => p.startsWith("/labs/lab5") },
+  { href: "/", id: "wd-kambaz-link", label: "Kambaz", match: () => false },
+  { href: "https://kambaz.dev/book/ch1", id: "wd-toc-book-link", label: "Chapter 1", match: () => false },
+  { href: "https://kambaz.dev/book/ch3", id: "wd-book-ch3-link", label: "Book Ch3", match: () => false },
+  { href: "https://github.com/shawn-04/webdev-client", id: "wd-github", label: "GitHub", match: () => false },
 ];
+
+const activeStyle = {
+  display: "inline-block",
+  backgroundColor: "#2563eb",
+  color: "white",
+  borderRadius: "9999px",
+  padding: "0 8px",
+  textDecoration: "none",
+};
 
 export default function TOC() {
   const pathname = usePathname();
-  const isActive = (href: string) =>
-    href === "/labs"
-      ? pathname === "/labs"
-      : pathname === href || pathname.startsWith(href + "/");
-
   return (
     <div id="wd-toc">
       <p id="wd-toc-personal">
@@ -26,27 +34,21 @@ export default function TOC() {
         I can do all things through Christ who strengthens me
       </p>
       <ul>
-        {labLinks.map((link) => (
-          <li key={link.href}>
-            <Link
-              href={link.href}
-              aria-current={isActive(link.href) ? "page" : undefined}
-              className={isActive(link.href) ? "font-bold text-red-600" : ""}
-            >
-              {link.label}
-            </Link>
-          </li>
-        ))}
-        <li>
-          <Link href="/" id="wd-kambaz-link">
-            Kambaz
-          </Link>
-        </li>
-        <li>
-          <Link href="https://kambaz.dev/book/ch1" id="wd-toc-book-link">
-            Chapter 1
-          </Link>
-        </li>
+        {LINKS.map((link) => {
+          const active = link.match(pathname);
+          return (
+            <li key={link.id}>
+              <Link
+                href={link.href}
+                id={link.id}
+                aria-current={active ? "page" : undefined}
+                style={active ? activeStyle : undefined}
+              >
+                {link.label}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

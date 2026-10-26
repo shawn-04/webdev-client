@@ -8,6 +8,8 @@ export default function VariableTypes() {
   let isBoolean = typeof booleanVariable;
   let city = "Boston";
   let credits = 4;
+  let sampleCount = 42;
+  let sampleLabel = "Lab 3";
   return (
     <div id="wd-variable-types">
       <h4>Variables Types</h4>
@@ -28,6 +30,10 @@ export default function VariableTypes() {
       city = {city}, typeof city = {typeof city}
       <br />
       credits = {credits}, typeof credits = {typeof credits}
+      <br />
+      sampleCount = {sampleCount}, typeof sampleCount = {typeof sampleCount}
+      <br />
+      sampleLabel = {sampleLabel}, typeof sampleLabel = {typeof sampleLabel}
       <hr />
     </div>
   );

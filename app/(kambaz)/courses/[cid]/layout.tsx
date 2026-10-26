@@ -18,6 +18,9 @@ export default async function CoursesLayout({
       <h2 className="text-red-600 text-2xl flex items-center gap-3">
         <FaAlignJustify className="text-xl" />
         <Breadcrumb course={course} />
+        <span id="wd-course-id" className="text-base text-gray-500">
+          ({course?._id})
+        </span>
       </h2>
       <hr className="my-3" />
       <div className="flex gap-6">

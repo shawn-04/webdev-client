@@ -3,6 +3,7 @@ export default function FindFunction() {
   let stringArray1 = ["string1", "string2", "string3"];
   const four = numberArray1.find((a) => a === 4);
   const string3 = stringArray1.find((a) => a === "string3");
+  const two = numberArray1.find((a) => a === 2);
   const missing = numberArray1.find((a) => a === 99);
   return (
     <div id="wd-find-function">
@@ -10,6 +11,8 @@ export default function FindFunction() {
       four = {four}
       <br />
       string3 = {string3}
+      <br />
+      two = {two}
       <br />
       missing = {String(missing)}
       <hr />

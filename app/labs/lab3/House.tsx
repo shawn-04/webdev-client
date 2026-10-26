@@ -12,9 +12,11 @@ export default function House() {
     },
     owners: ["Alice", "Bob"],
     yearBuilt: 1998,
+    garage: { cars: 2 },
   };
   console.log(house);
   console.log(house.owners);
+  console.log(house.address.city);
   return (
     <div id="wd-house">
       <h4>House</h4>
@@ -26,6 +28,8 @@ export default function House() {
       {house.owners.join(", ")}
       <h5>yearBuilt</h5>
       {house.yearBuilt}
+      <h5>garage cars</h5>
+      {house.garage.cars}
       <h5>Number of properties</h5>
       {Object.keys(house).length}
       <h5>Data</h5>

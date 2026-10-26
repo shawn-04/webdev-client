@@ -9,6 +9,7 @@ export default function TemplateLiterals() {
   const myName = "Shawn";
   const published = true;
   const myCourse = `${myName}'s CS5610 published: ${published ? "Yes" : "No"}`;
+  const courseStatus = `RS101 published: ${published ? "Yes" : "No"}`;
   return (
     <div id="wd-template-literals">
       <h4>Template Literals</h4>
@@ -19,6 +20,8 @@ export default function TemplateLiterals() {
       greeting1 = {greeting1}
       <br />
       greeting2 = {greeting2}
+      <br />
+      courseStatus = {courseStatus}
       <br />
       myCourse = {myCourse}
       <hr />

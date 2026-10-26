@@ -1,9 +1,10 @@
 [
-  { "_id": "U001", "username": "jannunzi", "firstName": "Jose", "lastName": "Annunziato", "email": "jose@neu.edu", "role": "FACULTY", "loginId": "001000001", "section": "S101", "lastActivity": "2026-10-20", "totalActivity": "10:21:32" },
-  { "_id": "U002", "username": "shawn", "firstName": "Shawn", "lastName": "Godfrey", "email": "shawn@neu.edu", "role": "STUDENT", "loginId": "001000002", "section": "S101", "lastActivity": "2026-10-21", "totalActivity": "15:32:43" },
-  { "_id": "U003", "username": "alice", "firstName": "Alice", "lastName": "Wonderland", "email": "alice@neu.edu", "role": "STUDENT", "loginId": "001000003", "section": "S101", "lastActivity": "2026-10-19", "totalActivity": "08:12:05" },
-  { "_id": "U004", "username": "bob", "firstName": "Bob", "lastName": "Builder", "email": "bob@neu.edu", "role": "TA", "loginId": "001000004", "section": "S101", "lastActivity": "2026-10-18", "totalActivity": "12:44:10" },
-  { "_id": "U005", "username": "carol", "firstName": "Carol", "lastName": "Danvers", "email": "carol@neu.edu", "role": "STUDENT", "loginId": "001000005", "section": "S102", "lastActivity": "2026-10-17", "totalActivity": "05:20:55" },
-  { "_id": "U006", "username": "dave", "firstName": "Dave", "lastName": "Lister", "email": "dave@neu.edu", "role": "STUDENT", "loginId": "001000006", "section": "S102", "lastActivity": "2026-10-16", "totalActivity": "03:10:00" },
-  { "_id": "U007", "username": "erin", "firstName": "Erin", "lastName": "Hannon", "email": "erin@neu.edu", "role": "FACULTY", "loginId": "001000007", "section": "S102", "lastActivity": "2026-10-15", "totalActivity": "20:01:12" }
+  { "_id": "123", "username": "iron_man", "firstName": "Tony", "lastName": "Stark", "email": "tony@stark.com", "role": "FACULTY", "loginId": "001234561S", "section": "S101", "lastActivity": "2020-10-01", "totalActivity": "10:21:32" },
+  { "_id": "234", "username": "dark_knight", "firstName": "Bruce", "lastName": "Wayne", "email": "bruce@wayne.com", "role": "STUDENT", "loginId": "001234562S", "section": "S101", "lastActivity": "2020-11-02", "totalActivity": "15:32:43" },
+  { "_id": "345", "username": "black_widow", "firstName": "Steve", "lastName": "Rogers", "email": "steve@rogers.com", "role": "STUDENT", "loginId": "001234563S", "section": "S101", "lastActivity": "2020-10-02", "totalActivity": "12:32:43" },
+  { "_id": "456", "username": "natasha", "firstName": "Natasha", "lastName": "Romanoff", "email": "natasha@avengers.com", "role": "TA", "loginId": "001234564S", "section": "S101", "lastActivity": "2020-11-05", "totalActivity": "13:23:34" },
+  { "_id": "567", "username": "thor", "firstName": "Thor", "lastName": "Odinson", "email": "thor@asgard.com", "role": "STUDENT", "loginId": "001234565S", "section": "S101", "lastActivity": "2020-12-01", "totalActivity": "11:22:33" },
+  { "_id": "678", "username": "hulk", "firstName": "Bruce", "lastName": "Banner", "email": "bruce@avengers.com", "role": "STUDENT", "loginId": "001234566S", "section": "S101", "lastActivity": "2020-12-02", "totalActivity": "10:22:33" },
+  { "_id": "789", "username": "spidey", "firstName": "Peter", "lastName": "Parker", "email": "peter@avengers.com", "role": "STUDENT", "loginId": "001234567S", "section": "S101", "lastActivity": "2020-12-03", "totalActivity": "09:12:23" },
+  { "_id": "890", "username": "shawn", "firstName": "Shawn", "lastName": "Godfrey", "email": "shawn@northeastern.edu", "role": "STUDENT", "loginId": "001234568S", "section": "S101", "lastActivity": "2023-02-19", "totalActivity": "20:15:10" }
 ]

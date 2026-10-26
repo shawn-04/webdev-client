@@ -21,6 +21,8 @@ export default function OptionalChaining() {
       missing?.prop ?? &quot;n/a&quot; = {missing?.prop ?? "n/a"}
       <br />
       house.garage?.cars ?? 0 = {house.garage?.cars ?? 0}
+      <br />
+      house.address?.zip ?? &quot;unknown&quot; = {house.address?.zip ?? "unknown"}
       <hr />
     </div>
   );

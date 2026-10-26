@@ -1,8 +1,13 @@
 [
-  { "_id": "A101", "title": "A1 - HTML", "course": "RS101", "availableDate": "2026-09-08", "dueDate": "2026-09-15", "points": 100, "description": "Build the Kambaz prototype with HTML" },
-  { "_id": "A102", "title": "A2 - CSS and Tailwind", "course": "RS101", "availableDate": "2026-09-22", "dueDate": "2026-09-29", "points": 100, "description": "Style Kambaz with CSS and Tailwind" },
-  { "_id": "A103", "title": "A3 - JavaScript", "course": "RS101", "availableDate": "2026-10-06", "dueDate": "2026-10-27", "points": 100, "description": "Make Kambaz data driven" },
-  { "_id": "A201", "title": "HW1 - ER Diagrams", "course": "RS102", "availableDate": "2026-09-08", "dueDate": "2026-09-18", "points": 50, "description": "Model a library database" },
-  { "_id": "A202", "title": "HW2 - SQL Queries", "course": "RS102", "availableDate": "2026-09-22", "dueDate": "2026-10-02", "points": 50, "description": "Write SELECT and JOIN queries" },
-  { "_id": "A301", "title": "Sprint 1 Report", "course": "RS103", "availableDate": "2026-09-15", "dueDate": "2026-09-29", "points": 20, "description": "Team retrospective" }
+  { "_id": "A101", "title": "A1", "course": "RS101", "availableDate": "2023-05-06", "dueDate": "2023-05-13", "points": 100, "description": "Propulsion basics: compute thrust for a sample engine." },
+  { "_id": "A102", "title": "A2", "course": "RS101", "availableDate": "2023-05-13", "dueDate": "2023-05-20", "points": 100, "description": "Compare solid and liquid propellants." },
+  { "_id": "A103", "title": "A3", "course": "RS101", "availableDate": "2023-05-20", "dueDate": "2023-05-27", "points": 100, "description": "Design a nozzle for a given chamber pressure." },
+  { "_id": "A201", "title": "A1", "course": "RS102", "availableDate": "2023-05-06", "dueDate": "2023-05-13", "points": 100, "description": "Calculate lift on a simple airfoil." },
+  { "_id": "A202", "title": "A2", "course": "RS102", "availableDate": "2023-05-13", "dueDate": "2023-05-20", "points": 100, "description": "Analyze drag at different speeds." },
+  { "_id": "A203", "title": "A3", "course": "RS102", "availableDate": "2023-05-20", "dueDate": "2023-05-27", "points": 100, "description": "Sketch shock waves around a wedge." },
+  { "_id": "A204", "title": "A4", "course": "RS102", "availableDate": "2024-05-27", "dueDate": "2024-06-03", "points": 100, "description": "Estimate the drag coefficient of a wing in a wind tunnel test." },
+  { "_id": "A301", "title": "A1", "course": "RS103", "availableDate": "2023-05-06", "dueDate": "2023-05-13", "points": 100, "description": "Size a solar array for a small satellite." },
+  { "_id": "A501", "title": "A1 - HTML", "course": "RS105", "availableDate": "2023-01-15", "dueDate": "2023-01-22", "points": 100, "description": "Build the Kambaz prototype with HTML" },
+  { "_id": "A502", "title": "A2 - CSS and Tailwind", "course": "RS105", "availableDate": "2023-01-29", "dueDate": "2023-02-05", "points": 100, "description": "Style Kambaz with CSS and Tailwind" },
+  { "_id": "A503", "title": "A3 - JavaScript", "course": "RS105", "availableDate": "2023-02-12", "dueDate": "2023-02-19", "points": 100, "description": "Make Kambaz data driven" }
 ]

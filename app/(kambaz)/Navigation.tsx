@@ -3,21 +3,22 @@ import { AiOutlineDashboard } from "react-icons/ai";
 import { IoCalendarOutline } from "react-icons/io5";
 import { LiaBookSolid } from "react-icons/lia";
 import { LuFlaskConical } from "react-icons/lu";
-import { FaInbox, FaRegCircleUser } from "react-icons/fa6";
+import { FaInbox, FaRegCircleUser, FaClockRotateLeft } from "react-icons/fa6";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [
-  { id: "wd-account-link", label: "Account", path: "/account", match: "/account", icon: FaRegCircleUser },
+const LINKS = [
   { id: "wd-dashboard-link", label: "Dashboard", path: "/dashboard", match: "/dashboard", icon: AiOutlineDashboard },
   { id: "wd-course-link", label: "Courses", path: "/dashboard", match: "/courses", icon: LiaBookSolid },
   { id: "wd-calendar-link", label: "Calendar", path: "/calendar", match: "/calendar", icon: IoCalendarOutline },
   { id: "wd-inbox-link", label: "Inbox", path: "/inbox", match: "/inbox", icon: FaInbox },
   { id: "wd-labs-link", label: "Labs", path: "/labs", match: "/labs", icon: LuFlaskConical },
+  { id: "wd-history-link", label: "History", path: "/history", match: "/history", icon: FaClockRotateLeft },
 ];
 
 export default function KambazNavigation() {
   const pathname = usePathname();
+  const accountActive = pathname.startsWith("/account");
 
   return (
     <nav
@@ -32,19 +33,27 @@ export default function KambazNavigation() {
         className="block bg-black py-3 text-center"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/images/NEU.png"
-          width={75}
-          height={75}
-          alt="Northeastern University"
-          className="mx-auto"
-        />
+        <img src="/images/NEU.png" width={75} height={75} alt="Northeastern University" className="mx-auto" />
       </a>
-      {links.map((link) => {
+
+      <Link
+        href="/account"
+        id="wd-account-link"
+        aria-current={accountActive ? "page" : undefined}
+        className={`block py-3 text-center text-sm no-underline ${
+          accountActive ? "bg-white text-red-600" : "bg-black text-white"
+        }`}
+      >
+        <FaRegCircleUser
+          className={`inline-block text-3xl ${accountActive ? "text-red-600" : "text-white"}`}
+        />
+        <br />
+        Account
+      </Link>
+
+      {LINKS.map((link) => {
         const active = pathname.startsWith(link.match);
         const Icon = link.icon;
-        const iconColor =
-          link.label === "Account" && !active ? "text-white" : "text-red-600";
         return (
           <Link
             key={link.id}
@@ -55,7 +64,7 @@ export default function KambazNavigation() {
               active ? "bg-white text-red-600" : "bg-black text-white"
             }`}
           >
-            <Icon className={`inline-block text-3xl ${iconColor}`} />
+            <Icon className="inline-block text-3xl text-red-600" />
             <br />
             {link.label}
           </Link>
