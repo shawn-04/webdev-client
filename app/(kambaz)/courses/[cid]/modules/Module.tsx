@@ -1,27 +1,28 @@
-import { ReactNode } from "react";
-import { BsGripVertical, BsPlus } from "react-icons/bs";
-import { IoEllipsisVertical } from "react-icons/io5";
-import { FaCheckCircle } from "react-icons/fa";
+import ModuleControlButtons from "./ModuleControlButtons";
+import { useModulesStore, type CourseModule } from "../../../store/modulesStore";
 
-export default function Module({
-  title,
-  children,
-}: {
-  title: string;
-  children?: ReactNode;
-}) {
+export default function Module({ module }: { module: CourseModule }) {
+  const updateModule = useModulesStore((state) => state.updateModule);
   return (
-    <li className="wd-module mb-10 list-none border border-gray-300">
-      <div className="wd-title flex items-center border-b border-gray-300 bg-gray-100 p-3 font-semibold">
-        <BsGripVertical className="me-2 text-xl" />
-        {title}
-        <div className="ms-auto flex items-center gap-2 text-lg">
-          <FaCheckCircle className="text-green-600" />
-          <BsPlus className="text-2xl" />
-          <IoEllipsisVertical />
-        </div>
+    <li className="wd-module border border-gray-300">
+      <div className="wd-title flex items-center justify-between bg-gray-200 p-3 font-semibold">
+        {module.editing ? (
+          <input className="w-1/2 rounded border border-neutral-300 px-2 py-1 text-base font-normal"
+            defaultValue={module.name}
+            onChange={(e) => updateModule({ ...module, name: e.target.value })}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") updateModule({ ...module, editing: false });
+            }} />
+        ) : (
+          <span>{module.name}</span>
+        )}
+        <ModuleControlButtons moduleId={module._id} />
       </div>
-      <ul className="wd-lessons m-0 list-none p-0">{children}</ul>
+      <ul className="wd-lessons list-none pl-0">
+        {(module.lessons ?? []).map((lesson) => (
+          <li key={lesson._id} className="wd-lesson border-l-4 border-t border-l-green-600 p-3">{lesson.name}</li>
+        ))}
+      </ul>
     </li>
   );
 }

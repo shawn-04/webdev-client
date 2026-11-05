@@ -1,15 +1,17 @@
 "use client";
 import { useParams } from "next/navigation";
 import { FaUserCircle } from "react-icons/fa";
-import { users, enrollments } from "../../../../database";
+import { users } from "../../../../database";
+import { useEnrollmentsStore } from "../../../../store/enrollmentsStore";
+import { emptyUser } from "../../../../account/AccountContext";
 
 export default function PeopleTable() {
   const { cid } = useParams<{ cid: string }>();
-  const roster = users.filter((user) =>
-    enrollments.some((e) => e.user === user._id && e.course === cid)
-  );
+  const enrollments = useEnrollmentsStore((state) => state.enrollments);
+  const roster = users.filter((user) => enrollments.some((e) => e.user === user._id && e.course === cid));
+  const columns = Object.keys(emptyUser).length;
   return (
-    <div id="wd-people-table" className="overflow-x-auto">
+    <div id="wd-people-table" className="overflow-x-auto" data-user-fields={columns}>
       <table className="w-full border-collapse text-sm">
         <thead>
           <tr className="border-b text-left">
@@ -24,7 +26,7 @@ export default function PeopleTable() {
         <tbody>
           {roster.map((user) => (
             <tr key={user._id} className="border-b">
-              <td className="wd-full-name p-2 text-red-600 flex items-center gap-2">
+              <td className="wd-full-name flex items-center gap-2 p-2 text-red-600">
                 <FaUserCircle className="text-2xl text-gray-400" />
                 <span className="wd-first-name">{user.firstName}</span>{" "}
                 <span className="wd-last-name">{user.lastName}</span>

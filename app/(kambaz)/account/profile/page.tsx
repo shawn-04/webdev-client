@@ -1,52 +1,56 @@
-import Link from "next/link";
-
-const label = "mb-1 block text-sm font-semibold";
-const input = "mb-3 w-full rounded border border-gray-300 px-3 py-2";
+"use client";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useAccountContext, type User } from "../AccountContext";
 
 export default function Profile() {
+  const [profile, setProfile] = useState<User | null>(null);
+  const { currentUser, setCurrentUser } = useAccountContext();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!currentUser) {
+      router.push("/account/signin");
+      return;
+    }
+    setProfile(currentUser);
+  }, [currentUser, router]);
+
+  const signout = () => {
+    setCurrentUser(null);
+    router.push("/account/signin");
+  };
+
+  if (!profile) return null;
+  const input = "mb-3 block w-full rounded border border-neutral-300 px-3 py-2";
+
   return (
-    <div id="wd-profile-screen" className="max-w-sm">
-      <h3 className="mt-0 mb-4 text-2xl font-normal">Profile</h3>
-
-      <label htmlFor="wd-username" className={label}>Username</label>
-      <input id="wd-username" defaultValue="CR7" placeholder="username" className={input} />
-
-      <label htmlFor="wd-password" className={label}>Password</label>
-      <input
-        id="wd-password"
-        defaultValue="0000007"
-        placeholder="password"
-        type="password"
-        className={input}
-      />
-
-      <label htmlFor="wd-firstname" className={label}>First name</label>
-      <input id="wd-firstname" defaultValue="Cristiano" placeholder="First Name" className={input} />
-
-      <label htmlFor="wd-lastname" className={label}>Last name</label>
-      <input id="wd-lastname" defaultValue="Ronaldo" placeholder="Last Name" className={input} />
-
-      <label htmlFor="wd-dob" className={label}>Date of birth</label>
-      <input id="wd-dob" defaultValue="2000-01-01" type="date" className={input} />
-
-      <label htmlFor="wd-email" className={label}>Email</label>
-      <input id="wd-email" defaultValue="cr7@goat.com" type="email" className={input} />
-
-      <label htmlFor="wd-role" className={label}>Role</label>
-      <select id="wd-role" defaultValue="FACULTY" className={input}>
+    <div id="wd-profile-screen">
+      <h3 className="text-3xl mb-4">Profile</h3>
+      <input id="wd-username" className={input} value={profile.username}
+        onChange={(e) => setProfile({ ...profile, username: e.target.value })} />
+      <input id="wd-password" type="password" className={input} value={profile.password}
+        onChange={(e) => setProfile({ ...profile, password: e.target.value })} />
+      <input id="wd-firstname" className={input} value={profile.firstName}
+        onChange={(e) => setProfile({ ...profile, firstName: e.target.value })} />
+      <input id="wd-lastname" className={input} value={profile.lastName}
+        onChange={(e) => setProfile({ ...profile, lastName: e.target.value })} />
+      <input id="wd-dob" type="date" className={input} value={profile.dob}
+        onChange={(e) => setProfile({ ...profile, dob: e.target.value })} />
+      <input id="wd-email" type="email" className={input} value={profile.email}
+        onChange={(e) => setProfile({ ...profile, email: e.target.value })} />
+      <select id="wd-role" className={input} value={profile.role}
+        onChange={(e) => setProfile({ ...profile, role: e.target.value })}>
         <option value="USER">User</option>
         <option value="ADMIN">Admin</option>
         <option value="FACULTY">Faculty</option>
         <option value="STUDENT">Student</option>
+        <option value="TA">TA</option>
       </select>
-
-      <Link
-        href="/account/signin"
-        id="wd-signout-btn"
-        className="block w-full rounded bg-red-600 py-2 text-center text-white no-underline hover:bg-red-700"
-      >
-        Sign out
-      </Link>
+      <button type="button" id="wd-update-profile-btn" onClick={() => setCurrentUser(profile)}
+        className="mb-2 w-full rounded bg-blue-600 px-3 py-2 text-white">Update</button>
+      <button type="button" onClick={signout} id="wd-signout-btn"
+        className="w-full rounded bg-red-600 px-3 py-2 text-white">Sign out</button>
     </div>
   );
 }
